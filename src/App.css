@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header-color{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+background: #0f0c29; 
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* This is my main gradient navbar ^^^ */
+}
+.landing-grid{
+
+  background: #0f0c29; 
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* This is my main gradient landing page ^^^ */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .avatar-img {
+    width: 20rem;
+    padding: 5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .banner-text{
+    background-color: black;
+    opacity: .7;
+    width: 36rem;
+    margin: auto;
+    border-radius: 10%;
   }
-}
+
+  .banner-text h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white; 
+  }
+
+  .banner-text hr{
+    border-top: 0.5rem dotted white;
+    width: 15rem;
+    margin: auto;
+
+  }
+
+  .banner-text p{
+    color: white;
+    font-size: wrem;
+    padding: 1rem;
+  }
