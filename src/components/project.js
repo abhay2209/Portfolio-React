@@ -9,7 +9,7 @@ class Projects extends Component {
     }
 toggleCategories() {
     if(this.state.activeTab === 0){
-        return(
+        return(<div className="projects-grid">
             <Card shadow={5} style ={{minwidht: '450', margin: 'auto'}}>
                 <CardTitle style={{color:'#fff', height: '15rem', background:'url(https://cdn.cnn.com/cnnnext/dam/assets/200518114838-05-pac-man-40.jpg) center/cover'}}> Card Number 1</CardTitle>
                 <CardText>This will be a description to my projects</CardText>
@@ -21,6 +21,31 @@ toggleCategories() {
                     <IconButton name="share"/>
                 </CardMenu>
             </Card>
+
+            <Card shadow={5} style ={{minwidht: '450', margin: 'auto'}}>
+                <CardTitle style={{color:'#fff', height: '15rem', background:'url(https://cdn.cnn.com/cnnnext/dam/assets/200518114838-05-pac-man-40.jpg) center/cover'}}> Card Number 2</CardTitle>
+                <CardText>This will be a description to my projects</CardText>
+                <CardActions border>
+                    <Button>Github</Button>
+                    <Button>Project Website</Button>
+                </CardActions>
+                <CardMenu stylr={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+            <Card shadow={5} style ={{minwidht: '450', margin: 'auto'}}>
+                <CardTitle style={{color:'#fff', height: '15rem', background:'url(https://cdn.cnn.com/cnnnext/dam/assets/200518114838-05-pac-man-40.jpg) center/cover'}}> Card Number 3</CardTitle>
+                <CardText>This will be a description to my projects</CardText>
+                <CardActions border>
+                    <Button>Github</Button>
+                    <Button>Project Website</Button>
+                </CardActions>
+                <CardMenu stylr={{color: '#fff'}}>
+                    <IconButton name="share"/>
+                </CardMenu>
+            </Card>
+            </div>
+            
         )
     }   else if(this.state.activeTab === 1){
         return (
@@ -47,8 +72,8 @@ toggleCategories() {
                 <Tab>C++</Tab>
 
             </Tabs>
-            <section className="project-grid">
-                <Grid className="projects-grid">
+        
+                <Grid>
                     <Cell col={12}>
                     <div className ="content">{this.toggleCategories()} </div>
 
@@ -56,7 +81,7 @@ toggleCategories() {
 
                 </Grid>
                 
-            </section>
+    
             </div>//These have indexes 0, 1, 2 and 3
         )
     }
