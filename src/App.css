@@ -30,7 +30,7 @@
   .banner-text{
     background-color: black;
     opacity: .7;
-    width: 36rem;
+    width: 40rem;
     margin: auto;
     border-radius: 10%;
   }
@@ -55,19 +55,17 @@
     padding: 1rem;
   }
 
-  .social-links {
+  .social {
     display: flex;
     justify-content: space-between;
-    width: 12rem;
+    width: 50%;
     margin: auto;
-
   }
-
-  .social-links i {
+  
+  .social i {
     color: white;
-    font-size: 5rem;
-    padding: 0.1rem;
-    
+    font-size: 5em;
+    padding: 8px;
   }
 
 .projects-grid {
@@ -95,6 +93,7 @@
   color: black;
   
   margin-bottom: 10rem;
+  
 
 }
 
@@ -121,4 +120,15 @@
 
 }
 
+#project-heading{
+  text-align: center;
+}
 
+#aboutDescription {
+margin-left: 2rem;
+margin-right: 2rem;
+}
+
+#aboutHeading {
+  margin-left: 1rem;
+}

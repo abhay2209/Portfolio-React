@@ -7,7 +7,7 @@ class Contact extends Component {
             <div className= "contact-body">
                 <Grid className="contact-grid">
                     <Cell col ={6}><h2>Abhay Jolly</h2>
-                    <img src = {require("../AbhayJolly.jpg")} alt="avatar" style={{height: '20rem'}}/>
+                    <img src = {require("../profile.jpg")} alt="avatar" style={{height: '20rem'}}/>
                     <p style={{width: '75%', margin: 'auto', paddingTop:'1rem'}}>This will be about me. I will keep this updated every semester. I am keeping this updated </p>
 
                     </Cell>

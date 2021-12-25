@@ -3,9 +3,6 @@ import './App.css';
 import {Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './components/main';
-import Radium from "radium";
-
-const RadiatingLink = Radium(Link);  
 
 function App() {
 
