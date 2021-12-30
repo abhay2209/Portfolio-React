@@ -1,5 +1,15 @@
 import React, {Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button} from 'react-mdl';
+
+// CSS used for buttons in Project Cards
+const ProjectButtonProperties = {
+    color: 'black', textDecoration: 'none'
+}
+
+// CSS for card display properties 
+const CardProperties = {
+    borderRadius: '3rem', minwidth: '450', margin: 'auto'
+}
 
 class Projects extends Component {
     constructor(props) {
@@ -9,63 +19,192 @@ class Projects extends Component {
     }
 
     toggleCategories() {
-        if(this.state.activeTab === 0){
-            return(<div className="projects-grid">
-                <Card shadow={5} style ={{borderRadius: '3rem', minwidht: '450', margin: 'auto'}}>
-                    <CardTitle style={{color:'#fff', height: '15rem', background:'url(https://cdn.cnn.com/cnnnext/dam/assets/200518114838-05-pac-man-40.jpg) center/cover'}}> Card Number 1</CardTitle>
-                    <CardText>This will be a description to my projects</CardText>
-                    <CardActions border>
-                        <Button>Github</Button>
-                        <Button>Project Website</Button>
-                    </CardActions>
-                    <CardMenu stylr={{color: '#fff'}}>
-                        <IconButton name="share"/>
-                    </CardMenu>
-                </Card>
 
-                <Card shadow={5} style ={{borderRadius: '3rem', minwidht: '450', margin: 'auto'}}>
-                    <CardTitle style={{color:'#fff', height: '15rem', background:'url(https://cdn.cnn.com/cnnnext/dam/assets/200518114838-05-pac-man-40.jpg) center/cover'}}> Card Number 2</CardTitle>
-                    <CardText>This will be a description to my projects</CardText>
+        // Projects for Tab 1
+        if(this.state.activeTab === 0){   
+            // Cards for each project with buttons to link them to Github repos
+            return(<div className="whole-grid">
+
+                <div className="projects-grid">
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
+                <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}>BUMPER TANKS</CardTitle>
+                    <CardText>Multiplayer game that involves tanks and unique player ids</CardText>
                     <CardActions border>
-                        <Button>Github</Button>
-                        <Button>Project Website</Button>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Bumper-Tanks">Github</a></Button>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://bumpertank.herokuapp.com/">Project Website</a></Button>
                     </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share"/>
-                    </CardMenu>
-                </Card>
-                <Card shadow={5} style ={{borderRadius: '3rem', minwidht: '450', margin: 'auto'}}>
-                    <CardTitle style={{color:'#fff', height: '15rem', background:'url(https://cdn.cnn.com/cnnnext/dam/assets/200518114838-05-pac-man-40.jpg) center/cover'}}> Card Number 3</CardTitle>
-                    <CardText>This will be a description to my projects</CardText>
-                    <CardActions border>
-                        <Button style={{borderRadius:'3rem'}}>Github</Button>
-                        <Button>Project Website</Button>
-                    </CardActions>
-                    <CardMenu style={{color: '#fff'}}>
-                        <IconButton name="share"/>
-                    </CardMenu>
                 </Card>
                 </div>
+
+                <div className="projects-grid">
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
+                    <CardTitle style={{color:'#fff',height: '15rem', background:'url(/projectImages/pokedex.jpeg) center/cover'}}> POKEDEX </CardTitle>
+                    <CardText>Database for Pokemons</CardText>
+                    <CardActions border>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Tokedex-Database">Github</a></Button>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://tokedex.herokuapp.com">Project Website</a></Button>
+                    </CardActions>
+                </Card>
+                </div>
+
+                <div className="projects-grid">
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
+                    <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/gradeCalculator.png) center/cover'}}>GRADE CALCULATOR</CardTitle>
+                    <CardText>Website to calculate grades average and weighted average</CardText>
+                    <CardActions border>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Grade-Calculator">Github</a></Button>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://gradecalculator2209.herokuapp.com">Project Website</a></Button>
+                    </CardActions>
+                </Card>
+                </div>
+
+                <div className="projects-grid">
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/fallHack.png) center/cover'}}>ASCII</CardTitle>
+                        <CardText>In a team of five, built a game on ReactJS for Fallhack2020 held at SFU</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/FallHack2020">Github</a></Button>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://drive.google.com/drive/folders/1dm9s_XQ4IaucEuLebqPsVsY6yPivCSQ5">Demo</a></Button>
+                        </CardActions>
+                    </Card>
+                    </div>
+
+            </div>
                 
             )
         }   else if(this.state.activeTab === 1){
             return (
-                <div><h1>This is Tab 2</h1></div>
+                <div className="whole-grid">
+
+                    <div class="projects-grid">
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/airbnb.jpg) center/cover'}}> AIRBNB BOOKER</CardTitle>
+                        <CardText>CLI for searching, booking and reviewing a booking on Airbnb</CardText>
+                        <CardActions border>
+                            <Button ><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Airbnb-booker">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+                     
+                     <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties}>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}> BUMPER TANKS</CardTitle>
+                        <CardText>Multiplayer game that involves tanks and unique player ids</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Bumper-Tanks">Github</a></Button>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://bumpertank.herokuapp.com/">Project Website</a></Button>
+                         </CardActions>
+                    </Card>
+                    </div>
+                    
+                    <div className="projects-grid">
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/pokedex.jpeg) center/cover'}}> POKEDEX</CardTitle>
+                        <CardText>Database for Pokemons</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Tokedex-Database">Github</a></Button>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://tokedex.herokuapp.com">Project Website</a></Button>
+                        </CardActions>
+                    </Card>
+                    </div>
+
+                </div>
             )
         }   else if(this.state.activeTab === 2){
             return (
-                <div><h1>This is Tab 3</h1></div>
+                <div className='whole-grid'>
+                    <div className="projects-grid" >
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/webServer.png) center/cover'}}> WEB SERVER</CardTitle>
+                        <CardText>A TCP multihtreaded web server built in Python that supports five status codes</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style={ProjectButtonProperties} href="https://github.com/abhay2209/Python-Web-Server">Github</a></Button>
+                        </CardActions>
+                    </Card>
+                    </div>
+
+                    <div className="projects-grid">
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/airbnb.jpg) center/cover'}}> AIRBNB BOOKER</CardTitle>
+                        <CardText>CLI for searching, booking and reviewing a booking on Airbnb</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Airbnb-booker">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+
+                     <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/anagram.png) center/cover'}}>ANAGRAM FINDER</CardTitle>
+                        <CardText>Finds anagram for a word using a dictionary of words provided</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Anagram-Problem">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+
+                     <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/miniProjects.jpeg) center/cover'}}>ML PROJECTS</CardTitle>
+                        <CardText>Implemented from scratch a Random forest classifier, Lof-outlier detection and K-mode clustering</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/MiniProjects-ML">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+    
+                    <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/covid19Ml.png) center/cover'}}>COVID-19 PREDICTOR</CardTitle>
+                        <CardText>Implemented in three sprints, hyperparameter tuned classifiers on covid-19 data</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Covid-19-data-mining-software">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+
+                     <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/pacman.png) center/cover'}}>PACMAN SEARCH</CardTitle>
+                        <CardText>Solving packman using DFS, BFS and A* Search </CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Covid-19-data-mining-software">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+
+                </div>
             )
         }   else if(this.state.activeTab === 3){
             return (
-                <div><h1>This is Tab 4</h1></div>
+                <div className="whole-grid">
+                    <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/cCode.png) center/cover'}}>DATA STRUCTURES</CardTitle>
+                        <CardText>Consists of assignments done at school, which implements double linked list and Binary Search Trees</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Data-Structures">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+
+                     <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/cCode.png) center/cover'}}>C++ BASICS</CardTitle>
+                        <CardText>Several assignments demonstrating my knowledge of OOP and algorithms</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Course-Assignments">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+                </div>
             )
         } 
     }
 //Using Cards(1), Tabs layout in React-MDL
     render() {
         return(
-            <div><h1 id="project-heading">Projects</h1>
+            <div><h1 id="project-heading">PROJECTS</h1>
             <Tabs activeTab = {this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple >
                 <Tab>JavaScript</Tab>
                 <Tab>SQL</Tab>
@@ -73,7 +212,7 @@ class Projects extends Component {
                 <Tab>C++</Tab>
 
             </Tabs>
-        
+            
                 <Grid>
                     <Cell col={12}>
                     <div className ="content">{this.toggleCategories()} </div>
