@@ -26,7 +26,7 @@
     width: 25rem;
     padding: 5rem;
   }
-
+  
   .banner-text{
     background-color: black;
     opacity: .7;
@@ -130,7 +130,16 @@
   font-size: 6rem;
   padding-right: 6rem;
   
+}
 
+.contact-info{
+  font-size: 4rem; font-family: 'Anton';
+}
+
+.contact-des{
+  width: '75%';
+  margin: 'auto';
+  padding-top:'1rem'
 }
 
 #project-heading{
@@ -144,4 +153,43 @@ margin-right: 2rem;
 
 #about-heading {
   text-align: center;
+}
+
+.demo-big-content{
+  overflow: auto;
+}
+
+
+.avatar-image{
+  height: 20rem;
+}
+
+@media only screen and (max-width: 600px) {
+   /* Media for resposivness in Contact component*/
+  .avatar-image{
+    height: 15rem;
+  }
+  .contact-grid{
+    display: inline-block;
+  }
+
+  .contact-list i{
+    font-size: 3rem;
+    padding-right: 3rem;
+    
+  }
+  .contact-info{
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .contact-heading{
+    font-size: 2rem;
+  }
+
+  .contact-des{
+    padding-top: 0.5rem;
+    font-size: 1.25rem;
+  }
+
 }
