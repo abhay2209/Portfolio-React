@@ -26,7 +26,7 @@ class Projects extends Component {
             return(<div className="whole-grid">
 
                 <div className="projects-grid">
-                <Card shadow={5} className='card-properties'>
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
                 <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}>BUMPER TANKS</CardTitle>
                     <CardText>Multiplayer game that involves tanks and unique player ids</CardText>
                     <CardActions border>
@@ -37,7 +37,7 @@ class Projects extends Component {
                 </div>
 
                 <div className="projects-grid">
-                <Card shadow={5}className='card-properties'>
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
                     <CardTitle style={{color:'#fff',height: '15rem', background:'url(/projectImages/pokedex.jpeg) center/cover'}}> POKEDEX </CardTitle>
                     <CardText>Database for Pokemons</CardText>
                     <CardActions border>
@@ -48,7 +48,7 @@ class Projects extends Component {
                 </div>
 
                 <div className="projects-grid">
-                <Card shadow={5} className='card-properties'>
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
                     <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/gradeCalculator.png) center/cover'}}>GRADE CALCULATOR</CardTitle>
                     <CardText>Website to calculate grades average and weighted average</CardText>
                     <CardActions border>
@@ -59,7 +59,7 @@ class Projects extends Component {
                 </div>
 
                 <div className="projects-grid">
-                    <Card shadow={5} className='card-properties'>
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/fallHack.png) center/cover'}}>ASCII</CardTitle>
                         <CardText>In a team of five, built a game on ReactJS for Fallhack2020 held at SFU</CardText>
                         <CardActions border>
@@ -222,7 +222,7 @@ class Projects extends Component {
                 </Grid>
                 
     
-            </div>      //These have indexes 0, 1, 2 and 3
+            </div> //These have indexes 0, 1, 2 and 3
         )
     }
 }
