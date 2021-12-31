@@ -1,4 +1,4 @@
-
+/* Landing screen component and navigation ba component styling*/
 .header-color{
 
   background: #c31432;  /* fallback for old browsers */
@@ -68,6 +68,7 @@
     padding: 8px;
   }
 
+/*Project screen component styling*/
 .projects-grid {
   display: inline-block;
   padding: 4rem;
@@ -85,6 +86,9 @@
   transform: scale(1.05);
 }
 
+#project-heading{
+  text-align: center;
+}
 
 /*contact page*/
 .contact-body {
@@ -102,11 +106,9 @@
   width:80%;
   height:60rem;
   background: white;
-  color: black;
-  
+  color: black; 
   margin-bottom: 10rem;
   
-
 }
 
 .contact-grid h2 {
@@ -141,10 +143,11 @@
   padding-top:'1rem'
 }
 
-#project-heading{
-  text-align: center;
+.avatar-image{
+  height: 20rem;
 }
 
+/*About page component styling*/
 #aboutDescription {
 margin-left: 2rem;
 margin-right: 2rem;
@@ -159,11 +162,24 @@ margin-right: 2rem;
 }
 
 
-.avatar-image{
-  height: 20rem;
-}
-
 @media only screen and (max-width: 600px) {
+
+  /* Switch gradient in small screen to bring the focus to Drawer*/
+  .header-color{
+
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  /* This is my main gradient navbar ^^^ */
+  }
+  .landing-grid{
+  
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
    /* Media for resposivness in Contact component*/
   .avatar-image{
     height: 15rem;
@@ -232,4 +248,11 @@ margin-right: 2rem;
     padding: 4px;
   }
 
-}
+  /*Media responsiveness for the projects component*/
+  .projects-grid {
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+   
+  }
