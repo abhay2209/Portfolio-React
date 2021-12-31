@@ -8,7 +8,7 @@ const ProjectButtonProperties = {
 
 // CSS for card display properties 
 const CardProperties = {
-    borderRadius: '3rem', minwidth: '450', margin: 'auto'
+    borderRadius: '3rem', minwidth: '400px', margin: 'auto'
 }
 
 class Projects extends Component {
@@ -28,7 +28,7 @@ class Projects extends Component {
                 <div className="projects-grid">
                 <Card shadow={5} style ={CardProperties} className='cardHover'>
                 <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}>BUMPER TANKS</CardTitle>
-                    <CardText>Multiplayer game that involves tanks and unique player ids</CardText>
+                    <CardText>Multiplayer game that involves tanks and unique player ID (NodeJS)</CardText>
                     <CardActions border>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Bumper-Tanks">Github</a></Button>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://bumpertank.herokuapp.com/">Project Website</a></Button>
@@ -38,8 +38,18 @@ class Projects extends Component {
 
                 <div className="projects-grid">
                 <Card shadow={5} style ={CardProperties} className='cardHover'>
+                <CardTitle style={{color:'#fff', height: '15rem'}} className='header-color'>My Portfolio</CardTitle>
+                    <CardText>A portfolio to keep a track of my learnings and display some of my projects (ReactJS/this website)</CardText>
+                    <CardActions border>
+                        <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Portfolio-React">Github</a></Button>
+                    </CardActions>
+                </Card>
+                </div>
+
+                <div className="projects-grid">
+                <Card shadow={5} style ={CardProperties} className='cardHover'>
                     <CardTitle style={{color:'#fff',height: '15rem', background:'url(/projectImages/pokedex.jpeg) center/cover'}}> POKEDEX </CardTitle>
-                    <CardText>Database for Pokemons</CardText>
+                    <CardText>Database for Pokemons where a user can add, update or remove pokemons (NodeJS)</CardText>
                     <CardActions border>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Tokedex-Database">Github</a></Button>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://tokedex.herokuapp.com">Project Website</a></Button>
@@ -50,7 +60,7 @@ class Projects extends Component {
                 <div className="projects-grid">
                 <Card shadow={5} style ={CardProperties} className='cardHover'>
                     <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/gradeCalculator.png) center/cover'}}>GRADE CALCULATOR</CardTitle>
-                    <CardText>Website to calculate grades average and weighted average</CardText>
+                    <CardText>SFU theme based website to calculate grades average and weighted average</CardText>
                     <CardActions border>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Grade-Calculator">Github</a></Button>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://gradecalculator2209.herokuapp.com">Project Website</a></Button>
@@ -61,7 +71,7 @@ class Projects extends Component {
                 <div className="projects-grid">
                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/fallHack.png) center/cover'}}>ASCII</CardTitle>
-                        <CardText>In a team of five, built a game on ReactJS for Fallhack2020 held at SFU</CardText>
+                        <CardText>In a team of five, built a game for Fallhack2020 held at SFU (ReactJS)</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/FallHack2020">Github</a></Button>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://drive.google.com/drive/folders/1dm9s_XQ4IaucEuLebqPsVsY6yPivCSQ5">Demo</a></Button>
@@ -79,7 +89,7 @@ class Projects extends Component {
                     <div class="projects-grid">
                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/airbnb.jpg) center/cover'}}> AIRBNB BOOKER</CardTitle>
-                        <CardText>CLI for searching, booking and reviewing a booking on Airbnb</CardText>
+                        <CardText>CLI for searching, booking and reviewing a booking on Airbnb (MS SQL)</CardText>
                         <CardActions border>
                             <Button ><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Airbnb-booker">Github</a></Button>
                         </CardActions>
@@ -87,9 +97,9 @@ class Projects extends Component {
                      </div>
                      
                      <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties}>
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}> BUMPER TANKS</CardTitle>
-                        <CardText>Multiplayer game that involves tanks and unique player ids</CardText>
+                        <CardText>Multiplayer game that involves tanks and unique player ID (PostgreSQL)</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Bumper-Tanks">Github</a></Button>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://bumpertank.herokuapp.com/">Project Website</a></Button>
@@ -100,7 +110,7 @@ class Projects extends Component {
                     <div className="projects-grid">
                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/pokedex.jpeg) center/cover'}}> POKEDEX</CardTitle>
-                        <CardText>Database for Pokemons</CardText>
+                        <CardText>Database for Pokemons where a user can add, update or remove pokemons (PostgreSQL)</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Tokedex-Database">Github</a></Button>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://tokedex.herokuapp.com">Project Website</a></Button>
@@ -136,7 +146,7 @@ class Projects extends Component {
                      <div className="projects-grid">
                      <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/anagram.png) center/cover'}}>ANAGRAM FINDER</CardTitle>
-                        <CardText>Finds anagram for a word using a dictionary of words provided</CardText>
+                        <CardText>Finds anagram for a word from a dictionary of words provided</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Anagram-Problem">Github</a></Button>
                         </CardActions>
