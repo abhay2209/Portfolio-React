@@ -222,7 +222,7 @@ class Projects extends Component {
                 </Grid>
                 
     
-            </div>//These have indexes 0, 1, 2 and 3
+            </div>      //These have indexes 0, 1, 2 and 3
         )
     }
 }

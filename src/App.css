@@ -86,10 +86,9 @@
 }
 
 
-/*contage page*/
+/*contact page*/
 .contact-body {
   margin: auto;
-  
   position: fixed;
   width: 100%;
   height: 100%;
@@ -179,7 +178,7 @@ margin-right: 2rem;
     
   }
   .contact-info{
-    font-size: 1rem;
+    font-size: 1.25rem;
     display: inline-block;
   }
 
@@ -190,6 +189,47 @@ margin-right: 2rem;
   .contact-des{
     padding-top: 0.5rem;
     font-size: 1.25rem;
+  }
+
+  /* Media responsivness for the landing page*/
+  .avatar-img {
+    
+    width: 15rem;
+    padding: 1rem;
+  }
+  
+  .banner-text{
+    background-color: black;
+    opacity: .7;
+    width: 20rem;
+    margin: auto;
+    border-radius: 10%;
+  }
+
+  .banner-text h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; 
+    
+  }
+
+  .banner-text hr{
+    border-top: 0.5rem dotted white;
+    width: 10rem;
+    margin: auto;
+
+  }
+
+  .banner-text p{
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .social i {
+    color: white;
+    font-size: 3em;
+    padding: 4px;
   }
 
 }
