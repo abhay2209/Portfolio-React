@@ -39,7 +39,7 @@ class Projects extends Component {
                 <div className="projects-grid">
                 <Card shadow={5} style ={CardProperties} className='cardHover'>
                 <CardTitle style={{color:'#fff', height: '15rem'}} className='header-color'>My Portfolio</CardTitle>
-                    <CardText>A portfolio to keep a track of my learnings and display some of my projects (ReactJS/this website)</CardText>
+                    <CardText>A portfolio to keep a track of my learnings and display some of my projects (ReactJS)</CardText>
                     <CardActions border>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Portfolio-React">Github</a></Button>
                     </CardActions>
