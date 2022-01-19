@@ -100,7 +100,7 @@
 /*contact page*/
 .contact-body {
   margin: auto;
-  position: fixed;
+  
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -131,7 +131,6 @@
   margin: auto;
   width: 50%;
   border-top: 0.5rem dotted black;
-  
 
 }
 
