@@ -36,7 +36,7 @@ class Contact extends Component {
                     
                     {/* This cell is exculisively for phone */}
 
-                    <Cell col={4} hideDesktop={true}>
+                    <Cell col={4} hideDesktop={true} hideTablet={true}>
                     <h2 className="contact-heading">CONTACT ME</h2>
                     <hr/>
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
