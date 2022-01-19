@@ -4,14 +4,16 @@ import {Grid, Cell} from 'react-mdl'
 class Landing extends Component {
     render() {
         return(
-            <div style ={{width: '100%', margin: 'auto'}}>
+            <div style ={{width: '100%', margin: 'auto', height: '100%'}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
+                    <div className="avatar-div">
                     <img 
                     src = {require("../profile.jpg")}
                 
                     alt="avatar"
                     className="avatar-img"/>
+                    </div>
                     
                     <div className="banner-text">
                             <h1>Abhay Jolly</h1>

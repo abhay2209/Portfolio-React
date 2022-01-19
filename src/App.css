@@ -15,16 +15,21 @@
   
   /* This is my main gradient landing page ^^^ */
   text-align: center;
-  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   }
+  
   .avatar-img {
-    
-    width: 25rem;
-    padding: 2.5rem;
+    width: 21.5rem;
+    border-radius: 15%;
+    border: 0.25rem solid black;
+  }
+
+  .avatar-div{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   
   .banner-text{
@@ -219,8 +224,11 @@ margin-right: 2rem;
 
   /* Media responsivness for the landing page*/
   .avatar-img {
-    
     width: 15rem;
+    border-radius: 15%;
+    border: 0.25rem solid black;
+  }
+  .avatar-div{
     padding: 0.5rem;
   }
   
