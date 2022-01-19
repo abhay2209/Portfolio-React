@@ -20,7 +20,7 @@
   height: 100%;
   width: 100%;
   }
-  
+
   .avatar-img {
     width: 21.5rem;
     border-radius: 15%;
@@ -229,7 +229,8 @@ margin-right: 2rem;
     border: 0.25rem solid black;
   }
   .avatar-div{
-    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
   }
   
   .banner-text{
