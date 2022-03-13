@@ -158,8 +158,8 @@
 
 /*About page component styling*/
 #aboutDescription {
-margin-left: 2rem;
-margin-right: 2rem;
+max-width: 70%;
+margin: auto;
 }
 
 #about-heading {
