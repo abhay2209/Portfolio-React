@@ -10,7 +10,7 @@ class Contact extends Component {
                     <img src = {require("../profile.jpg")} alt="avatar" className="avatar-image"/>
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
                     <form name="Contact-form"  method="post">
-                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="hidden" name="form-name" value="Message from your potfolio" />
                         <Textfield label="First name" name="firstName" floatingLabel style={{width: '200px'}}/>
                         <Textfield label="Last name" name="lastName" floatingLabel style={{width: '200px'}}/>
                         <Textfield label="Email" name="email" floatingLabel style={{width: '200px'}}/>
