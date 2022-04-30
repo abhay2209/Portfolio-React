@@ -1,5 +1,5 @@
 import React, {Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl' ;
+import { Grid, Cell, List, ListItem, ListItemContent, Textfield, Button} from 'react-mdl' ;
 
 class Contact extends Component {
     render() {
@@ -9,7 +9,14 @@ class Contact extends Component {
                     <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Abhay Jolly</h2>
                     <img src = {require("../profile.jpg")} alt="avatar" className="avatar-image"/>
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
-
+                    <form name="Contact-form"  method="post">
+                    <input type="hidden" name="form-name" value="contact" />
+                        <Textfield onChange={() => {}} label="First name" name="firstName" floatingLabel style={{width: '200px'}}/>
+                        <Textfield onChange={() => {}} label="Last name" name="lastName" floatingLabel style={{width: '200px'}}/>
+                        <Textfield onChange={() => {}} label="Email" name="email" floatingLabel style={{width: '200px'}}/>
+                        <Textfield onChange={() => {}} label="Message" name="message" floatingLabel style={{width: '200px'}} multiline rows={10}/>
+                        <Button raised ripple type="submit">Submit</Button>
+                    </form>
                     </Cell>
                     <Cell col ={6} hidePhone={true}><h2 className="contact-heading">CONTACT ME</h2>
                     <hr/>
