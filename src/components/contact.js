@@ -11,10 +11,10 @@ class Contact extends Component {
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
                     <form name="Contact-form"  method="post">
                     <input type="hidden" name="form-name" value="contact" />
-                        <Textfield onChange={() => {}} label="First name" name="firstName" floatingLabel style={{width: '200px'}}/>
-                        <Textfield onChange={() => {}} label="Last name" name="lastName" floatingLabel style={{width: '200px'}}/>
-                        <Textfield onChange={() => {}} label="Email" name="email" floatingLabel style={{width: '200px'}}/>
-                        <Textfield onChange={() => {}} label="Message" name="message" floatingLabel style={{width: '200px'}} multiline rows={10}/>
+                        <Textfield label="First name" name="firstName" floatingLabel style={{width: '200px'}}/>
+                        <Textfield label="Last name" name="lastName" floatingLabel style={{width: '200px'}}/>
+                        <Textfield label="Email" name="email" floatingLabel style={{width: '200px'}}/>
+                        <Textfield label="Message" name="message" floatingLabel style={{width: '200px'}} multiline rows={10}/>
                         <Button raised ripple type="submit">Submit</Button>
                     </form>
                     </Cell>
