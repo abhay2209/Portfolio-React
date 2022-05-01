@@ -25,8 +25,8 @@ class Contact extends Component {
                     <Cell col ={6}><h2 className="contact-heading">Send a message</h2>
                     <hr/>
                     <div className="message-box">
-                    <form name="contact"  method="post">
-                    <input type="hidden" name="form-name" value="Message from your potfolio" />
+                    <form name="Contact-form"  method="post">
+                    <input type="hidden" name="form-name" value="contact" />
                         <Textfield style={textProperties} pattern={alphabetPattern} label="First name" name="firstName" floatingLabel classname required="true"/>
                         <Textfield style={textProperties} pattern={alphabetPattern} label="Last name" name="lastName" floatingLabel required="true" />
                         <Textfield style={textProperties} pattern={emailPattern} label="Email (example: ajolly@sfu.ca)" name="email" floatingLabel required="true"/>
