@@ -11,7 +11,8 @@ const buttonProperties = {
 }
 
 const textProperties= {
-    display: 'block'
+    display: 'block',
+    margin:'auto',
 }
 
 class Contact extends Component {
@@ -26,11 +27,11 @@ class Contact extends Component {
                     <div className="message-box">
                     <form name="Contact-form"  method="post">
                     <input type="hidden" name="form-name" value="Message from your potfolio" />
-                        <Textfield className="message-field" pattern={alphabetPattern} label="First name" name="firstName" floatingLabel classname required="true"/>
-                        <Textfield className="message-field" pattern={alphabetPattern} label="Last name" name="lastName" floatingLabel required="true" />
-                        <Textfield className="message-field" pattern={emailPattern} label="Email (example: ajolly@sfu.ca)" name="email" floatingLabel required="true"/>
-                        <Textfield className="message-field" label="Message" name="message" floatingLabel required="true" multiline rows={10}/>
-                        <Button raised accent colored="true" type="submit" className="submit-button" style={{display:'block', margin:'auto',marginTop:'1rem'}}>Submit</Button>
+                        <Textfield style={textProperties} pattern={alphabetPattern} label="First name" name="firstName" floatingLabel classname required="true"/>
+                        <Textfield style={textProperties} pattern={alphabetPattern} label="Last name" name="lastName" floatingLabel required="true" />
+                        <Textfield style={textProperties} pattern={emailPattern} label="Email (example: ajolly@sfu.ca)" name="email" floatingLabel required="true"/>
+                        <Textfield style={textProperties} label="Message" name="message" floatingLabel required="true" multiline rows={10}/>
+                        <Button raised accent colored="true" type="submit" className="submit-button" style={buttonProperties}>Submit</Button>
                     </form>
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
                     </div>
