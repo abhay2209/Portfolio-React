@@ -1,17 +1,42 @@
 import React, {Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl' ;
+import { Grid, Cell, List, ListItem, ListItemContent, Textfield, Button} from 'react-mdl' ;
+
+const emailPattern = "[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+"
+const alphabetPattern = "[A-Za-z ]+$" 
+
+const buttonProperties = {
+    display:'block', 
+    margin:'auto',
+    marginTop:'1rem',
+}
+
+const textProperties= {
+    display: 'block',
+    margin:'auto',
+}
 
 class Contact extends Component {
     render() {
         return(
             <div className= "contact-body">
+                <h1 id="project-heading">CONTACT ME</h1>
+                <hr/>
                 <Grid className="contact-grid">
-                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Abhay Jolly</h2>
-                    <img src = {require("../profile.jpg")} alt="avatar" className="avatar-image"/>
-                    <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
-
+                    <Cell col ={6}><h2 className="contact-heading">Send a message</h2>
+                    <hr/>
+                    <div className="message-box">
+                    <form name="Contact-form"  method="post">
+                    <input type="hidden" name="form-name" value="contact" />
+                        <Textfield style={textProperties} pattern={alphabetPattern} label="First name" name="firstName" floatingLabel classname required="true"/>
+                        <Textfield style={textProperties} pattern={alphabetPattern} label="Last name" name="lastName" floatingLabel required="true" />
+                        <Textfield style={textProperties} pattern={emailPattern} label="Email (example: ajolly@sfu.ca)" name="email" floatingLabel required="true"/>
+                        <Textfield style={textProperties} label="Message" name="message" floatingLabel required="true" multiline rows={10}/>
+                        <Button raised accent colored="true" type="submit" className="submit-button" style={buttonProperties}>Submit</Button>
+                    </form>
+                    
+                    </div>
                     </Cell>
-                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">CONTACT ME</h2>
+                    <Cell col ={6}><h2 className="contact-heading">Contact Information</h2>
                     <hr/>
                 
                     <div className="contact-list">
@@ -32,35 +57,6 @@ class Contact extends Component {
                         
                     </List>
                     </div>
-                    </Cell>
-                    
-                    {/* This cell is exculisively for phone */}
-
-                    <Cell col={4} hideDesktop={true} hideTablet={true}>
-                    <h2 className="contact-heading">CONTACT ME</h2>
-                    <hr/>
-                    <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
-                
-                    <div className="contact-list">
-                    <List style={{textAlign:'center'}}>
-                        <ListItem>
-                            <ListItemContent className='contact-info'>
-                                <i className="fa fa-phone-square" aria-hidden="true"/>+1 778 792 8366</ListItemContent> 
-                        </ListItem>
-                        <ListItem>
-                            <ListItemContent className='contact-info'>
-                                <i className="fa fa-envelope-square" aria-hidden="true"/>ajolly@sfu.ca</ListItemContent> 
-                        </ListItem>
-                        <ListItem>
-                            <ListItemContent className='contact-info'>
-                                <i className="fa fa-home" aria-hidden="true"/>Burnaby, BC</ListItemContent> 
-                        </ListItem>
-        
-                        
-                    </List>
-                    </div>
-                        
-
                     </Cell>
                     </Grid>            
                 </div>
