@@ -144,12 +144,6 @@
   font-size: 3.5rem; font-family: 'Anton'; 
 }
 
-.contact-des{
-  width: 75%;
-  margin: auto;
-  padding-top: 1.5rem
-}
-
 .message-box{
   padding-top: 2rem;
 }
@@ -213,10 +207,6 @@ margin: auto;
     font-size: 2rem;
   }
 
-  .contact-des{
-    padding-top: 0.5rem;
-    font-size: 1.25rem;
-  }
 
   /* Media responsivness for the landing page*/
   .avatar-img {
