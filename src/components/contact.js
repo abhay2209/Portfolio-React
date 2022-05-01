@@ -22,7 +22,7 @@ class Contact extends Component {
                 <h1 id="project-heading">CONTACT ME</h1>
                 <hr/>
                 <Grid className="contact-grid">
-                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Send a message</h2>
+                    <Cell col ={6}><h2 className="contact-heading">Send a message</h2>
                     <hr/>
                     <div className="message-box">
                     <form name="Contact-form"  method="post">
@@ -36,7 +36,7 @@ class Contact extends Component {
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
                     </div>
                     </Cell>
-                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Contact Information</h2>
+                    <Cell col ={6}><h2 className="contact-heading">Contact Information</h2>
                     <hr/>
                 
                     <div className="contact-list">
@@ -61,7 +61,7 @@ class Contact extends Component {
                     
                     {/* This cell is exculisively for phone */}
 
-                    <Cell col={4} hideDesktop={true} hideTablet={true}>
+                    {/* <Cell col={4} hideDesktop={true} hideTablet={true}>
                     <h2 className="contact-heading">CONTACT ME</h2>
                     <hr/>
                     <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
@@ -86,7 +86,7 @@ class Contact extends Component {
                     </div>
                         
 
-                    </Cell>
+                    </Cell> */}
                     </Grid>            
                 </div>
         )
