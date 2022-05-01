@@ -141,19 +141,22 @@
 }
 
 .contact-info{
-  font-size: 3.5rem; font-family: 'Anton';
+  font-size: 3.5rem; font-family: 'Anton'; 
 }
 
 .contact-des{
   width: 75%;
   margin: auto;
-  padding-top: 1rem
+  padding-top: 1.5rem
 }
 
-.avatar-image{
+/* .message-field{
+  width: 5rem;
+  display: block;
+} */
+
+.message-box{
   padding-top: 2rem;
-  height: 20rem;
-  border-radius: 50%;
 }
 
 /*About page component styling*/
@@ -170,7 +173,6 @@ margin: auto;
 .demo-big-content{
   overflow: auto;
 }
-
 
 @media only screen and (max-width: 650px) {
 

@@ -1,24 +1,41 @@
 import React, {Component } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent, Textfield, Button} from 'react-mdl' ;
 
+const emailPattern = "[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+"
+const alphabetPattern = "[A-Za-z ]+$" 
+
+const buttonProperties = {
+    display:'block', 
+    margin:'auto',
+    marginTop:'1rem',
+}
+
+const textProperties= {
+    display: 'block'
+}
+
 class Contact extends Component {
     render() {
         return(
             <div className= "contact-body">
+                <h1 id="project-heading">CONTACT ME</h1>
+                <hr/>
                 <Grid className="contact-grid">
-                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Abhay Jolly</h2>
-                    <img src = {require("../profile.jpg")} alt="avatar" className="avatar-image"/>
-                    <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
+                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Send a message</h2>
+                    <hr/>
+                    <div className="message-box">
                     <form name="Contact-form"  method="post">
                     <input type="hidden" name="form-name" value="Message from your potfolio" />
-                        <Textfield label="First name" name="firstName" floatingLabel style={{width: '200px'}}/>
-                        <Textfield label="Last name" name="lastName" floatingLabel style={{width: '200px'}}/>
-                        <Textfield label="Email" name="email" floatingLabel style={{width: '200px'}}/>
-                        <Textfield label="Message" name="message" floatingLabel style={{width: '200px'}} multiline rows={10}/>
-                        <Button raised ripple type="submit">Submit</Button>
+                        <Textfield className="message-field" pattern={alphabetPattern} label="First name" name="firstName" floatingLabel classname required="true"/>
+                        <Textfield className="message-field" pattern={alphabetPattern} label="Last name" name="lastName" floatingLabel required="true" />
+                        <Textfield className="message-field" pattern={emailPattern} label="Email (example: ajolly@sfu.ca)" name="email" floatingLabel required="true"/>
+                        <Textfield className="message-field" label="Message" name="message" floatingLabel required="true" multiline rows={10}/>
+                        <Button raised accent colored="true" type="submit" className="submit-button" style={{display:'block', margin:'auto',marginTop:'1rem'}}>Submit</Button>
                     </form>
+                    <p className="contact-des">I am currently looking for Software development oppurtunities where I can learn and grow more amongst experienced mentors</p>
+                    </div>
                     </Cell>
-                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">CONTACT ME</h2>
+                    <Cell col ={6} hidePhone={true}><h2 className="contact-heading">Contact Information</h2>
                     <hr/>
                 
                     <div className="contact-list">
