@@ -117,6 +117,15 @@ class Projects extends Component {
                         </CardActions>
                     </Card>
                     </div>
+                    <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/employee.png) center/cover'}}>Employee Database</CardTitle>
+                        <CardText>Built using Springboot/Java, React.js and MySQL, an employee database with the ability to add, view, delete and update employees</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/employee_project">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
 
                 </div>
             )
@@ -190,6 +199,15 @@ class Projects extends Component {
                 <div className="whole-grid">
                     <div className="projects-grid">
                      <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/employee.png) center/cover'}}>Employee Database</CardTitle>
+                        <CardText>Built using Springboot/Java, React.js and MySQL, an employee database with the ability to add, view, delete and update employees</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/employee_project">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                     </div>
+                    <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/cCode.png) center/cover'}}>DATA STRUCTURES</CardTitle>
                         <CardText>Consists of assignments done at school, which implements double linked list and Binary Search Trees</CardText>
                         <CardActions border>
@@ -219,7 +237,7 @@ class Projects extends Component {
                 <Tab>JavaScript</Tab>
                 <Tab>SQL</Tab>
                 <Tab>Python</Tab>
-                <Tab>C++</Tab>
+                <Tab>Java/C++</Tab>
 
             </Tabs>
             
