@@ -141,19 +141,11 @@
 }
 
 .contact-info{
-  font-size: 3.5rem; font-family: 'Anton';
+  font-size: 3.5rem; font-family: 'Anton'; 
 }
 
-.contact-des{
-  width: 75%;
-  margin: auto;
-  padding-top: 1rem
-}
-
-.avatar-image{
+.message-box{
   padding-top: 2rem;
-  height: 20rem;
-  border-radius: 50%;
 }
 
 /*About page component styling*/
@@ -170,7 +162,6 @@ margin: auto;
 .demo-big-content{
   overflow: auto;
 }
-
 
 @media only screen and (max-width: 650px) {
 
@@ -216,10 +207,6 @@ margin: auto;
     font-size: 2rem;
   }
 
-  .contact-des{
-    padding-top: 0.5rem;
-    font-size: 1.25rem;
-  }
 
   /* Media responsivness for the landing page*/
   .avatar-img {
