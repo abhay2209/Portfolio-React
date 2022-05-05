@@ -120,7 +120,7 @@ class Projects extends Component {
                     <div className="projects-grid">
                      <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/employee.png) center/cover'}}>Employee Database</CardTitle>
-                        <CardText>Built using   Java Spring boot, React.js and MySQL, an employee database with the ability to add, view, delete and update employees</CardText>
+                        <CardText>Built using Java Spring boot, React.js and MySQL, an employee database with the ability to add, view, delete and update employees</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/employee_project">Github</a></Button>
                         </CardActions>
