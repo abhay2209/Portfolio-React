@@ -234,7 +234,7 @@ class Projects extends Component {
         return(
             <div><h1 id="project-heading">PROJECTS</h1>
             <Tabs activeTab = {this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple >
-                <Tab>JavaScript</Tab>
+                <Tab>JavaScript</Tab> 
                 <Tab>SQL</Tab>
                 <Tab>Python</Tab>
                 <Tab>Java/C++</Tab>
@@ -250,7 +250,7 @@ class Projects extends Component {
                 </Grid>
                 
     
-            </div> //These have indexes 0, 1, 2 and 3
+            </div> //These have indexes 0 JavaScript, 1 SQL, 2 Python and 3 Java/C++
         )
     }
 }
