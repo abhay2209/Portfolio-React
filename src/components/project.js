@@ -28,7 +28,7 @@ class Projects extends Component {
                 <div className="projects-grid">
                 <Card shadow={5} style ={CardProperties} className='cardHover'>
                 <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}>BUMPER TANKS</CardTitle>
-                    <CardText>Multiplayer game that involves tanks and unique player ID (NodeJS)</CardText>
+                    <CardText>Multiplayer game developed using NodeJS, PostgreSQL, HTML and CSS</CardText>
                     <CardActions border>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Bumper-Tanks">Github</a></Button>
                         <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://bumpertank.herokuapp.com/">Project Website</a></Button>
@@ -69,6 +69,16 @@ class Projects extends Component {
                 </div>
 
                 <div className="projects-grid">
+                     <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/employee.png) center/cover'}}>Employee Database</CardTitle>
+                        <CardText>Built using Java Spring boot, ReactJS and MySQL, a web application with the ability to add, view, delete and update employees</CardText>
+                        <CardActions border>
+                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/employee_project">Github</a></Button>
+                        </CardActions>
+                     </Card>
+                </div>
+
+                <div className="projects-grid">
                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/fallHack.png) center/cover'}}>ASCII</CardTitle>
                         <CardText>In a team of five, built a game for Fallhack2020 held at SFU (ReactJS)</CardText>
@@ -99,7 +109,7 @@ class Projects extends Component {
                      <div className="projects-grid">
                      <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/bumperTanks.png) center/cover'}}> BUMPER TANKS</CardTitle>
-                        <CardText>Multiplayer game that involves tanks and unique player ID (PostgreSQL)</CardText>
+                        <CardText>Multiplayer game developed using NodeJS, PostgreSQL, JavaScript, HTML and CSS</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Bumper-Tanks">Github</a></Button>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://bumpertank.herokuapp.com/">Project Website</a></Button>
@@ -135,7 +145,7 @@ class Projects extends Component {
                     <div className="projects-grid" >
                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/webServer.png) center/cover'}}> WEB SERVER</CardTitle>
-                        <CardText>A TCP multihtreaded web server built in Python that supports five status codes</CardText>
+                        <CardText>A TCP multihtreaded web server that supports that can respond the client with five status codes</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style={ProjectButtonProperties} href="https://github.com/abhay2209/Python-Web-Server">Github</a></Button>
                         </CardActions>
