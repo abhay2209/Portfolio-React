@@ -145,7 +145,7 @@ class Projects extends Component {
                     <div className="projects-grid" >
                     <Card shadow={5} style ={CardProperties} className='cardHover'>
                         <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/webServer.png) center/cover'}}> WEB SERVER</CardTitle>
-                        <CardText>A TCP multihtreaded web server that supports that can respond the client with five status codes</CardText>
+                        <CardText>A TCP multihtreaded web server that can respond the client's HTTP request with five status codes</CardText>
                         <CardActions border>
                             <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style={ProjectButtonProperties} href="https://github.com/abhay2209/Python-Web-Server">Github</a></Button>
                         </CardActions>
