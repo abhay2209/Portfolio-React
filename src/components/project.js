@@ -1,5 +1,6 @@
 import React, {Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button} from 'react-mdl';
+import * as message from '../constants'
 
 // CSS used for buttons in Project Cards
 const ProjectButtonProperties = {
@@ -9,6 +10,18 @@ const ProjectButtonProperties = {
 // CSS for card display properties 
 const CardProperties = {
     borderRadius: '3rem', minwidth: '400px', margin: 'auto'
+}
+
+function createCard(projectName, projectDescription, projectImage, projectGit, projectWeb = null) {
+    return <div class="projects-grid">
+                    <Card shadow={5} style ={CardProperties} className='cardHover'>
+                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/'+projectImage+') center/cover'}}>{projectName}</CardTitle>
+                        <CardText>{projectDescription}</CardText>
+                        <CardActions border>
+                            <Button ><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = {projectGit}>{message.GITHUB}</a></Button>
+                        </CardActions>
+                       </Card>
+           </div>
 }
 
 class Projects extends Component {
@@ -207,34 +220,9 @@ class Projects extends Component {
         }   else if(this.state.activeTab === 3){
             return (
                 <div className="whole-grid">
-                    <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/employee.png) center/cover'}}>Employee Database</CardTitle>
-                        <CardText>Built using Java Spring boot, React.js and MySQL, an employee database with the ability to add, view, delete and update employees</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/employee_project">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-                    <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/cCode.png) center/cover'}}>DATA STRUCTURES</CardTitle>
-                        <CardText>Consists of assignments done at school, which implements double linked list and Binary Search Trees</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Data-Structures">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-
-                     <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/cCode.png) center/cover'}}>C++ BASICS</CardTitle>
-                        <CardText>Several assignments demonstrating my knowledge of OOP and algorithms</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Course-Assignments">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
+                     {createCard(message.EMPLOYEE_DATABASE, message.EMPLOYEE_DATABASE_DESCRIPTION, message.EMPLOYEE_DB_IMG, message.EMPLOYEE_DB_GIT_LINK)}
+                     {createCard(message.DATA_STRUCTURES, message.DS_DESCRIPTION, message.DS_IMG, message.DS_GIT_LINK)}
+                     {createCard(message.C_BASICS, message.C_BASICS_DESCRIPTION, message.C_BASICS_IMG, message.C_BASICS_GIT_LINK)}
                 </div>
             )
         } 
