@@ -1,6 +1,7 @@
 // Project cards
-export const GITHUB = 'Github'
+export const PROJECT_GITHUB = 'Github'
 export const PROJECT_WEBSITE = 'Project Website'
+export const PROJECT_DEMO = 'Demo'
 
 // Java/C++ projects 
 export const EMPLOYEE_DATABASE = 'Employee Database'
@@ -48,3 +49,33 @@ export const WEB_SERVER = 'WEB SERVER'
 export const WEB_SERVER_DESCRIPTION = 'A TCP multihtreaded web server that can respond the client\'s HTTP request with five status codes'
 export const WEB_SERVER_GIT_LINK = 'https://github.com/abhay2209/Python-Web-Server'
 export const WEB_SERVER_IMG = 'webServer.png'
+
+// SQL Projects
+export const POKEDEX = 'POKEDEX'
+export const POKEDEX_DESCRIPTION = 'Database for Pokemons where a user can add, update or remove pokemons (PostgreSQL)'
+export const POKEDEX_GIT_LINK = 'https://github.com/abhay2209/Tokedex-Database'
+export const POKEDEX_PROJECT_LINK = 'https://tokedex.herokuapp.com'
+export const POKEDEX_IMG = 'pokedex.jpeg'
+
+export const BUMPER_TANKS = 'BUMPER TANKS'
+export const BUMPER_TANKS_DESCRIPTION = 'Multiplayer game developed using NodeJS, PostgreSQL, JavaScript, HTML and CSS'
+export const BUMPER_TANKS_GIT_LINK = 'https://github.com/abhay2209/Bumper-Tanks'
+export const BUMPER_TANKS_PROJECT_LINK = 'https://bumpertank.herokuapp.com/'
+export const BUMPER_TANKS_IMG = 'bumperTanks.png'
+
+// Javascript/React projects
+export const ASCII = 'ASCII'
+export const ASCII_DESCRIPTION = 'In a team of five, built a game for Fallhack2020 held at SFU (ReactJS)'
+export const ASCII_GIT_LINK = 'https://github.com/abhay2209/FallHack2020'
+export const ASCII_DEMO_LINK = 'https://drive.google.com/drive/folders/1dm9s_XQ4IaucEuLebqPsVsY6yPivCSQ5'
+export const ASCII_IMG = 'fallHack.png'
+
+export const GRADE_CALCULATOR = 'GRADE CALCULATOR'
+export const GRADE_CALCULATOR_DESCRIPTION = 'SFU theme based website to calculate grades average and weighted average'
+export const GRADE_CALCULATOR_GIT_LINK = 'https://github.com/abhay2209/Grade-Calculator'
+export const GRADE_CALCULATOR_PROJECT_LINK = 'https://gradecalculator2209.herokuapp.com"'
+export const GRADE_CALCULATOR_IMG = 'gradeCalculator.png'
+
+export const PORTFOLIO = 'My Portfolio'
+export const PORTFOLIO_DESCRIPTION = 'A portfolio to showcase my experience and projects (ReactJS)'
+export const PORTFOLIO_GIT_LINK = 'https://github.com/abhay2209/Portfolio-React'
