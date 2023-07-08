@@ -155,66 +155,12 @@ class Projects extends Component {
         }   else if(this.state.activeTab === 2){
             return (
                 <div className='whole-grid'>
-                    <div className="projects-grid" >
-                    <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/webServer.png) center/cover'}}> WEB SERVER</CardTitle>
-                        <CardText>A TCP multihtreaded web server that can respond the client's HTTP request with five status codes</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style={ProjectButtonProperties} href="https://github.com/abhay2209/Python-Web-Server">Github</a></Button>
-                        </CardActions>
-                    </Card>
-                    </div>
-
-                    <div className="projects-grid">
-                    <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/airbnb.jpg) center/cover'}}> AIRBNB BOOKER</CardTitle>
-                        <CardText>CLI for searching, booking and reviewing a booking on Airbnb</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Airbnb-booker">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-
-                     <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/anagram.png) center/cover'}}>ANAGRAM FINDER</CardTitle>
-                        <CardText>Finds anagram for a word from a dictionary of words provided</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Anagram-Problem">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-
-                     <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/miniProjects.jpeg) center/cover'}}>ML PROJECTS</CardTitle>
-                        <CardText>Implemented from scratch a Random forest classifier, Lof-outlier detection and K-mode clustering</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/MiniProjects-ML">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-    
-                    <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/covid19Ml.png) center/cover'}}>COVID-19 PREDICTOR</CardTitle>
-                        <CardText>Implemented in three sprints, hyperparameter tuned classifiers on covid-19 data</CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Covid-19-data-mining-software">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-
-                     <div className="projects-grid">
-                     <Card shadow={5} style ={CardProperties} className='cardHover'>
-                        <CardTitle style={{color:'#fff', height: '15rem', background:'url(/projectImages/pacman.png) center/cover'}}>PACMAN SEARCH</CardTitle>
-                        <CardText>Solving packman using DFS, BFS and A* Search </CardText>
-                        <CardActions border>
-                            <Button className="buttonHover"><a target = "_blank" rel="noopener noreferrer" style = {ProjectButtonProperties} href = "https://github.com/abhay2209/Covid-19-data-mining-software">Github</a></Button>
-                        </CardActions>
-                     </Card>
-                     </div>
-
+                    {createCard(message.WEB_SERVER, message.WEB_SERVER_DESCRIPTION, message.WEB_SERVER_IMG, message.WEB_SERVER_GIT_LINK)}
+                    {createCard(message.AIRBNB_BOOKER, message.AIRBNB_BOOKER_DESCRIPTION, message.AIRBNB_BOOKER_IMG, message.AIRBNB_BOOKER_GIT_LINK)}    
+                    {createCard(message.ANAGRAM_FINDER, message.ANAGRAM_FINDER_DESCRIPTION, message.ANAGRAM_FINDER_IMG, message.ANAGRAM_FINDER_GIT_LINK)}
+                    {createCard(message.ML_PROJECTS, message.ML_PROJECTS_DESCRIPTION, message.ML_PROJECTS_IMG, message.ML_PROJECTS_GIT_LINK)}
+                    {createCard(message.COVID_PREDICT, message.COVID_PREDICT_DESCRIPTION, message.COVID_PREDICT_IMG, message.COVID_PREDICT_GIT_LINK)}
+                    {createCard(message.PACMAN_SEARCH, message.PACMAN_SEARCH_DESCRIPTION, message.PACMAN_SEARCH_IMG, message.PACMAN_SEARCH_GIT_LINK)}
                 </div>
             )
         }   else if(this.state.activeTab === 3){
