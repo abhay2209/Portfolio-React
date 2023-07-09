@@ -95,10 +95,15 @@ export const PORTFOLIO_DESCRIPTION = 'A portfolio to showcase my experience and 
 export const PORTFOLIO_GIT_LINK = 'https://github.com/abhay2209/Portfolio-React'
 
 export const NOTE_MAKER = 'NOTE MAKER'
-export const NOTE_MAKER_DESCRIPTION = 'Lets you perform CRUD operations for notes that use in PostgreSQL and Docker to run. (ReactJS)'
+export const NOTE_MAKER_DESCRIPTION = 'Lets you perform CRUD operations for notes that are stored in PostgreSQL and needs Docker to run. (ReactJS)'
 export const NOTE_MAKER_GIT_LINK = 'https://github.com/abhay2209/Note-Maker'
 export const NOTE_MAKER_IMG = 'noteMaker.png'
 
+export const BUDGET_WISE = 'BUDGET WISE'
+export const BUDGET_WISE_DESCRIPTION = 'In a group of three built a budget supervising web application where a user can maintain and visualize their monthly expenditure (ReactJS | NodeJS | ElephantSQL)'
+export const BUDGET_WISE_GIT_LINK = 'https://github.com/abhay2209/budget-wise-app'
+export const BUDGET_WISE_DEMO_LINK = 'https://drive.google.com/file/d/1wxdW2_PCV77b_nWGvqSnlN61Wtla2yhF/view?usp=sharing'
+export const BUDGET_WISE_IMG = 'budgetwise.png'
 
 // Contact section
 export const email = 'abhayjolly18@gmail.com'

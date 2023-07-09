@@ -48,6 +48,7 @@ class Projects extends Component {
             // Cards for each project with buttons to link them to Github repos
             return(
                 <div className="whole-grid">
+                    {createCard(message.BUDGET_WISE, message.BUDGET_WISE_DESCRIPTION, message.BUDGET_WISE_IMG, message.BUDGET_WISE_GIT_LINK, null, message.BUDGET_WISE_DEMO_LINK)}
                     {createCard(message.BUMPER_TANKS, message.BUMPER_TANKS_DESCRIPTION, message.BUMPER_TANKS_IMG, message.BUMPER_TANKS_GIT_LINK)}
                     {createCard(message.NOTE_MAKER, message.NOTE_MAKER_DESCRIPTION, message.NOTE_MAKER_IMG, message.NOTE_MAKER_GIT_LINK)}
                     {createCard(message.PORTFOLIO, message.PORTFOLIO_DESCRIPTION, null, message.PORTFOLIO_GIT_LINK, null, null, true)}
@@ -60,6 +61,7 @@ class Projects extends Component {
         }   else if(this.state.activeTab === message.projectSection.SQL){
             return (
                 <div className="whole-grid">
+                    {createCard(message.BUDGET_WISE, message.BUDGET_WISE_DESCRIPTION, message.BUDGET_WISE_IMG, message.BUDGET_WISE_GIT_LINK, null, message.BUDGET_WISE_DEMO_LINK)}
                     {createCard(message.AIRBNB_BOOKER, message.AIRBNB_BOOKER_DESCRIPTION, message.AIRBNB_BOOKER_IMG, message.AIRBNB_BOOKER_GIT_LINK)} 
                     {createCard(message.BUMPER_TANKS, message.BUMPER_TANKS_DESCRIPTION, message.BUMPER_TANKS_IMG, message.BUMPER_TANKS_GIT_LINK)}
                     {createCard(message.NOTE_MAKER, message.NOTE_MAKER_DESCRIPTION, message.NOTE_MAKER_IMG, message.NOTE_MAKER_GIT_LINK)}
