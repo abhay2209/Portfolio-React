@@ -57,6 +57,7 @@
   .banner-text p{
     color: white;
     font-size: 2rem;
+    line-height: 2.4rem;
     padding: 1rem;
   }
 
@@ -152,6 +153,7 @@
 #aboutDescription {
 max-width: 70%;
 margin: auto;
+padding-bottom: 5rem;
 }
 
 #about-heading {

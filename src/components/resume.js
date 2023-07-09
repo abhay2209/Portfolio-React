@@ -1,10 +1,18 @@
-import React, {Component } from 'react';
+const Resume = ({ data }) => {
+  return (
+    <div className="resume">
+      {data.map((heading, index) => (
+        <div key={index}>
+          <h5>{heading.title}</h5>
+          <ul>
+            {heading.bulletPoints.map((point, bulletIndex) => (
+              <li key={bulletIndex}>{point}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-class Resume extends Component {
-    render() {
-        return(
-            <div><h1>Resume</h1></div>
-        )
-    }
-}
 export default Resume;
