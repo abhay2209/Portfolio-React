@@ -49,6 +49,7 @@ class Projects extends Component {
             return(
                 <div className="whole-grid">
                     {createCard(message.BUMPER_TANKS, message.BUMPER_TANKS_DESCRIPTION, message.BUMPER_TANKS_IMG, message.BUMPER_TANKS_GIT_LINK)}
+                    {createCard(message.NOTE_MAKER, message.NOTE_MAKER_DESCRIPTION, message.NOTE_MAKER_IMG, message.NOTE_MAKER_GIT_LINK)}
                     {createCard(message.PORTFOLIO, message.PORTFOLIO_DESCRIPTION, null, message.PORTFOLIO_GIT_LINK, null, null, true)}
                     {createCard(message.POKEDEX, message.POKEDEX_DESCRIPTION, message.POKEDEX_IMG, message.POKEDEX_GIT_LINK, message.PROJECT_WEBSITE)}
                     {createCard(message.GRADE_CALCULATOR, message.GRADE_CALCULATOR_DESCRIPTION, message.GRADE_CALCULATOR_IMG, message.GRADE_CALCULATOR_GIT_LINK)}
@@ -61,6 +62,7 @@ class Projects extends Component {
                 <div className="whole-grid">
                     {createCard(message.AIRBNB_BOOKER, message.AIRBNB_BOOKER_DESCRIPTION, message.AIRBNB_BOOKER_IMG, message.AIRBNB_BOOKER_GIT_LINK)} 
                     {createCard(message.BUMPER_TANKS, message.BUMPER_TANKS_DESCRIPTION, message.BUMPER_TANKS_IMG, message.BUMPER_TANKS_GIT_LINK)}
+                    {createCard(message.NOTE_MAKER, message.NOTE_MAKER_DESCRIPTION, message.NOTE_MAKER_IMG, message.NOTE_MAKER_GIT_LINK)}
                     {createCard(message.POKEDEX, message.POKEDEX_DESCRIPTION, message.POKEDEX_IMG, message.POKEDEX_GIT_LINK)}
                     {createCard(message.EMPLOYEE_DATABASE, message.EMPLOYEE_DATABASE_DESCRIPTION, message.EMPLOYEE_DB_IMG, message.EMPLOYEE_DB_GIT_LINK)}
                 </div>
@@ -91,17 +93,17 @@ class Projects extends Component {
         return(
             <div><h1 id="project-heading">PROJECTS</h1>
             <Tabs activeTab = {this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple >
-                <Tab>JavaScript</Tab> 
-                <Tab>SQL</Tab>
-                <Tab>Python</Tab>
-                <Tab>Java/C++</Tab>
+                <Tab>{message.projectTabs.React}</Tab> 
+                <Tab>{message.projectTabs.SQL}</Tab>
+                <Tab>{message.projectTabs.Python}</Tab>
+                <Tab>{message.projectTabs.Java}</Tab>
             </Tabs>
                 <Grid>
                     <Cell col={12}>
                     <div className ="content">{this.toggleCategories()} </div>
                     </Cell>
                 </Grid>
-            </div> //These have indexes 0 JavaScript, 1 SQL, 2 Python and 3 Java/C++
+            </div>
         )
     }
 }

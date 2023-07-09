@@ -2,11 +2,19 @@
 export const PROJECT_GITHUB = 'Github'
 export const PROJECT_WEBSITE = 'Project Website'
 export const PROJECT_DEMO = 'Demo'
+
 export const projectSection = {
     JavaScript: 0,
     SQL: 1,
     Python: 2,
     Java: 3
+}
+
+export const projectTabs = {
+    React: 'React/JavaScript',
+    SQL: 'SQL',
+    Python: 'Python',
+    Java: 'Java/C++'
 }
 
 // Java/C++ projects 
@@ -85,3 +93,14 @@ export const GRADE_CALCULATOR_IMG = 'gradeCalculator.png'
 export const PORTFOLIO = 'My Portfolio'
 export const PORTFOLIO_DESCRIPTION = 'A portfolio to showcase my experience and projects (ReactJS)'
 export const PORTFOLIO_GIT_LINK = 'https://github.com/abhay2209/Portfolio-React'
+
+export const NOTE_MAKER = 'NOTE MAKER'
+export const NOTE_MAKER_DESCRIPTION = 'Lets you perform CRUD operations for notes that use in PostgreSQL and Docker to run. (ReactJS)'
+export const NOTE_MAKER_GIT_LINK = 'https://github.com/abhay2209/Note-Maker'
+export const NOTE_MAKER_IMG = 'noteMaker.png'
+
+
+// Contact section
+export const email = 'abhayjolly18@gmail.com'
+export const cellNumber = '+1 778 792 8366'
+export const address = 'Burnaby, BC'
