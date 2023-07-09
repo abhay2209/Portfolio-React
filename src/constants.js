@@ -109,3 +109,56 @@ export const BUDGET_WISE_IMG = 'budgetwise.png'
 export const email = 'abhayjolly18@gmail.com'
 export const cellNumber = '+1 778 792 8366'
 export const address = 'Burnaby, BC'
+
+// Resume points 
+export const resumeData = [
+    {
+        title: "Simon Fraser University",
+        bulletPoints: [
+        "Bachelor of Applied Science with Distinction, major in Computer Science and concentration in Information Systems",
+        "Awarded Entrance Scholarship in Summer 2019 and Open scholarship in Summer 2022, Spring 2023, and Summer 2023",
+        "Dean's Honor Roll in Spring 2019 and Spring 2022"
+      ]
+    },
+    {
+        title: "Software Developer | Visier Inc. [Angular | NgRx, TypeScript, Scala, PostgreSQL, Cassandra-DB, RxJs, Play Framework]",
+        bulletPoints: [
+        "Collaborated on multiple projects, contributing to full-stack development using Angular with Onion architecture in the frontend and Scala with MVC architecture in the backend",
+        "Followed secure development life cycle by threat modeling a feature, and developed it from UI to DB schema (PostgreSQL) using technologies like Protobuf and Play Framework for RESTful web services",
+        "Created Vacuum tasks for Cassandra DB (non-relational), which improved application performance by 25% for 20k+ customers",
+        "Created a macOS menu bar application using Python3 and PyQt5 in a company-wide hackathon, streamlining daily scripts for 200+ developers and earning an honorable mention for innovation"
+      ]
+    },
+    {
+        title: "Software Developer Co-op | NETGEAR Inc. [Python, PyQt5, Batch]",
+        bulletPoints: [
+        "Worked in an Agile environment (XP) to develop a multi-threaded Graphical User Interface (GUI)",
+        "Developed the GUI using the MVC architecture and object-oriented programming principles which lets a user perform automated throughput tests on the LTE 5GHz modems",
+        "Worked with various network communication concepts (TCP/IP, UDP) to develop the GUI's functionality",
+        "Used REST API and Socket programming to develop the required APIs and integrated them with the GUI"
+      ]
+    },
+    {
+        title: "Teaching Assistant (UI/UX Design) | Simon Fraser University",
+        bulletPoints: [
+        "For an upper division Computer Science course – User Interface Design (UI/UX), helped students to understand and apply UI/UX principles in the terms of Spring 2021, Fall 2021, and Fall 2022",
+        "Provided guidance to students in using Figma to create high-fidelity prototypes during office hours and moderated lectures with the professor"
+      ]
+    },
+    {
+        title: "Web Developer | CJSF Radio 90.1 FM. [JavaScript, Bootstrap, HTML, CSS]",
+        bulletPoints: [
+        "Developed and deployed a website for a fundraising drive which helped support the radio station",
+        "Wrote maintainable and scalable code with the Front-end team to add features to the radio station's website",
+        "Collaborated with the Backend, Frontend, and the Mobile development team, to elaborate on new features"
+      ]
+    },
+    {
+        title: "Personal Experience",
+        bulletPoints: [
+        "Created several web applications using ReactJS, NodeJS, and PostgreSQL where Docker, Netlify, and Google Cloud Platform were utilized",
+        "Have gained a deep understanding of using REST API, network protocols, and User Interface Design",
+        "Collaborated in several teams to create maintainable and scalable projects"
+      ]
+    }
+  ];
