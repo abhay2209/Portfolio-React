@@ -44,19 +44,19 @@ class Projects extends Component {
 
     toggleCategories() {
         // Projects for Tab 1
-        if(this.state.activeTab === 0){   
+        if(this.state.activeTab === message.projectSection.JavaScript){   
             // Cards for each project with buttons to link them to Github repos
-            return(<div className="whole-grid">
-                {createCard(message.BUMPER_TANKS, message.BUMPER_TANKS_DESCRIPTION, message.BUMPER_TANKS_IMG, message.BUMPER_TANKS_GIT_LINK)}
-                {createCard(message.PORTFOLIO, message.PORTFOLIO_DESCRIPTION, null, message.PORTFOLIO_GIT_LINK, null, null, true)}
-                {createCard(message.POKEDEX, message.POKEDEX_DESCRIPTION, message.POKEDEX_IMG, message.POKEDEX_GIT_LINK, message.PROJECT_WEBSITE)}
-                {createCard(message.GRADE_CALCULATOR, message.GRADE_CALCULATOR_DESCRIPTION, message.GRADE_CALCULATOR_IMG, message.GRADE_CALCULATOR_GIT_LINK)}
-                {createCard(message.EMPLOYEE_DATABASE, message.EMPLOYEE_DATABASE_DESCRIPTION, message.EMPLOYEE_DB_IMG, message.EMPLOYEE_DB_GIT_LINK)}
-                {createCard(message.ASCII, message.ASCII_DESCRIPTION, message.ASCII_IMG, message.ASCII_GIT_LINK, null, message.ASCII_DEMO_LINK)}
-            </div>
-                
+            return(
+                <div className="whole-grid">
+                    {createCard(message.BUMPER_TANKS, message.BUMPER_TANKS_DESCRIPTION, message.BUMPER_TANKS_IMG, message.BUMPER_TANKS_GIT_LINK)}
+                    {createCard(message.PORTFOLIO, message.PORTFOLIO_DESCRIPTION, null, message.PORTFOLIO_GIT_LINK, null, null, true)}
+                    {createCard(message.POKEDEX, message.POKEDEX_DESCRIPTION, message.POKEDEX_IMG, message.POKEDEX_GIT_LINK, message.PROJECT_WEBSITE)}
+                    {createCard(message.GRADE_CALCULATOR, message.GRADE_CALCULATOR_DESCRIPTION, message.GRADE_CALCULATOR_IMG, message.GRADE_CALCULATOR_GIT_LINK)}
+                    {createCard(message.EMPLOYEE_DATABASE, message.EMPLOYEE_DATABASE_DESCRIPTION, message.EMPLOYEE_DB_IMG, message.EMPLOYEE_DB_GIT_LINK)}
+                    {createCard(message.ASCII, message.ASCII_DESCRIPTION, message.ASCII_IMG, message.ASCII_GIT_LINK, null, message.ASCII_DEMO_LINK)}
+                </div>
             )
-        }   else if(this.state.activeTab === 1){
+        }   else if(this.state.activeTab === message.projectSection.SQL){
             return (
                 <div className="whole-grid">
                     {createCard(message.AIRBNB_BOOKER, message.AIRBNB_BOOKER_DESCRIPTION, message.AIRBNB_BOOKER_IMG, message.AIRBNB_BOOKER_GIT_LINK)} 
@@ -65,7 +65,7 @@ class Projects extends Component {
                     {createCard(message.EMPLOYEE_DATABASE, message.EMPLOYEE_DATABASE_DESCRIPTION, message.EMPLOYEE_DB_IMG, message.EMPLOYEE_DB_GIT_LINK)}
                 </div>
             )
-        }   else if(this.state.activeTab === 2){
+        }   else if(this.state.activeTab === message.projectSection.Python){
             return (
                 <div className='whole-grid'>
                     {createCard(message.WEB_SERVER, message.WEB_SERVER_DESCRIPTION, message.WEB_SERVER_IMG, message.WEB_SERVER_GIT_LINK)}
@@ -76,7 +76,7 @@ class Projects extends Component {
                     {createCard(message.PACMAN_SEARCH, message.PACMAN_SEARCH_DESCRIPTION, message.PACMAN_SEARCH_IMG, message.PACMAN_SEARCH_GIT_LINK)}
                 </div>
             )
-        }   else if(this.state.activeTab === 3){
+        }   else if(this.state.activeTab === message.projectSection.Java){
             return (
                 <div className="whole-grid">
                      {createCard(message.EMPLOYEE_DATABASE, message.EMPLOYEE_DATABASE_DESCRIPTION, message.EMPLOYEE_DB_IMG, message.EMPLOYEE_DB_GIT_LINK)}

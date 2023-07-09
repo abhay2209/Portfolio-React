@@ -2,6 +2,12 @@
 export const PROJECT_GITHUB = 'Github'
 export const PROJECT_WEBSITE = 'Project Website'
 export const PROJECT_DEMO = 'Demo'
+export const projectSection = {
+    JavaScript: 0,
+    SQL: 1,
+    Python: 2,
+    Java: 3
+}
 
 // Java/C++ projects 
 export const EMPLOYEE_DATABASE = 'Employee Database'
