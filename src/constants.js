@@ -107,7 +107,6 @@ export const BUDGET_WISE_IMG = 'budgetwise.png'
 
 // Contact section
 export const email = 'abhayjolly18@gmail.com'
-export const cellNumber = '+1 778 792 8366'
 export const address = 'Burnaby, BC'
 
 // Resume points 

@@ -40,10 +40,6 @@ class Contact extends Component {
                     <hr/>
                         <div className="contact-list">
                             <List>
-                                {/* <ListItem>
-                                    <ListItemContent className='contact-info'>
-                                        <i className="fa fa-phone-square" aria-hidden="true"/>{message.cellNumber}</ListItemContent> 
-                                </ListItem> */}
                                 <ListItem>
                                     <ListItemContent className='contact-info'>
                                         <i className="fa fa-envelope-square" aria-hidden="true"/>{message.email}</ListItemContent> 
