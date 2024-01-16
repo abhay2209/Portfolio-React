@@ -120,6 +120,15 @@ export const resumeData = [
       ]
     },
     {
+      title: "Software Developer | Visier Inc. [React, TypeScript, Kotlin, Quarkus, PostgreSQL, Zustand, Tanstack Query]",
+      bulletPoints: [
+      "Collaborate with teams across different countries to develop a data analytics-driven cloud-based application on Visier's PaaS Alpine, optimizing decision-making for total rewards allocation and employee compensation",
+      "Implemented a pivotal stock options feature utilizing REST API, object-oriented programming and client/server architecture knowledge, driving multiple customer acquisitions and product success",
+      "Enhanced software quality by authoring comprehensive unit, integration, and end-to-end (E2E) tests, utilizing JUnit and Mockito",
+      "Contributed to a winning team in a company-wide hackathon, creating a data model and API explorer for company’s PaaS using React Flow, which is now evolving into a new product"
+    ]
+  },
+    {
         title: "Software Developer | Visier Inc. [Angular | NgRx, TypeScript, Scala, PostgreSQL, Cassandra-DB, RxJs, Play Framework]",
         bulletPoints: [
         "Collaborated on multiple projects, contributing to full-stack development using Angular with Onion architecture in the frontend and Scala with MVC architecture in the backend",
