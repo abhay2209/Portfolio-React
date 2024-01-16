@@ -18,7 +18,7 @@ class Landing extends Component {
                     <div className="banner-text">
                             <h1>Abhay Jolly</h1>
                             <hr/>
-                            <p> Python | JavaScript | TypeScript | Scala | NodeJS | ReactJS | Angular | PlayFramework | PostgreSQL | CassandraDB | Java | HTML/CSS </p>
+                            <p> Python | JavaScript | TypeScript | Java | Kotlin | NodeJS | ReactJS | Angular | PlayFramework | PostgreSQL | CassandraDB | HTML/CSS </p>
                             <div class = "social">
                                 <a href ="https://www.linkedin.com/in/abhay-jolly-585b49196/" target="_blank" rel="noopener noreferrer">
                                     <i class ="fa fa-linkedin"  aria-hidden="false"/>
